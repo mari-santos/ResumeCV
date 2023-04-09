@@ -1,0 +1,144 @@
+@use 'variables'
+
+* 
+    font-family: 'Montserrat', sans-serif
+    margin-top: 0
+
+body
+    margin-left: auto
+    margin-right: auto
+    max-width: 70%
+    align-items: center
+    display: flex
+
+aside
+    max-width: 250px
+    margin: 10px 35px 0 10px
+    background-image: linear-gradient(to right top, #49a8d6, #009ae7, #0089f7, #0074ff, #0057ff, #2f46f0, #4234e1, #4e1bd1, #5722b9, #5a28a2, #592d8d, #563278)
+
+main
+    float: right
+    max-width: 60%
+    margin-top: 10px
+    display: table
+
+figure
+    margin-left: 0
+    margin-bottom: 0
+
+img
+    max-width: 250px
+    width: auto
+    height: auto
+    -webkit-mask-image: linear-gradient(to top, transparent 25%, black 100%)
+
+.nomes
+    display: inline
+    position: absolute
+    text-align: center
+    max-width: 250px
+    top: 32%
+
+    h1
+        font-size: 2rem
+        color: variables.$background-color
+        margin-bottom: 0
+    
+    p
+        font-size: 1rem
+        font-weight: 500
+        color: variables.$terciary-color
+        text-align: center
+
+
+
+.title
+    font-size: 1.2rem
+    font-weight: 700
+    text-transform: uppercase
+    color: variables.$primary-color
+    margin-bottom: 10px
+    border-bottom: solid 2px variables.$primary-color
+
+
+.content
+    margin-top: 20px
+    margin-bottom: 50px
+    
+    ul
+        line-height: 30px
+        list-style-type: circle
+        color: variables.$primary-color
+
+#educacao
+    ul
+        list-style-image: url("../img/school.svg")
+        line-height: 30px
+
+.fa-brands, .fa-linkedin-in, .fa-regular, .fa-envelope, .fa-brands, .fa-whatsapp
+    color: variables.$background-color
+
+
+#dados
+    margin-bottom: 50px
+
+#informacoes
+        margin: 50px 20px 35px 20px
+
+.subtitle
+        color: variables.$background-color
+        margin-top: 15px
+        margin-bottom: 10px
+        font-weight: 500
+        font-size: 1.2rem
+.topic
+    margin-bottom: 25px
+
+.item
+    margin-bottom: 12px
+    
+    a
+        text-decoration: none
+        color:  variables.$background-color
+        margin-left: 5px
+
+        &:hover
+            color: variables.$terciary-color
+
+.subtopic
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 12px
+
+.container 
+    height: 7px
+    width: 105px
+    background-color: #CCC
+    position: relative
+    border-radius: 10px
+
+.container .progress-bar
+    position: absolute
+    height: 100%
+    background-color: variables.$primary-color
+    width: 85%
+    border-radius: 10px 0 0 10px
+
+    &--dois
+        width: 69%
+    
+    &--tres
+        width: 72%
+
+    &--quatro, &--cinco
+        width: 59%
+
+    &--seis
+        width: 45%
+    
+    &--sete
+        width: 25%
+    
+    &--oito
+        width: 50%
